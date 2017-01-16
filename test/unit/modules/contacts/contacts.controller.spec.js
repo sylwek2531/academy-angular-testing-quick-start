@@ -21,11 +21,8 @@ fdescribe('ContactCtrl', function ()
         // }];
 
 
-        //callThrough() - wywołaj orginał
         // ContactServiceMock = _ContactService_;
         // spyOn(ContactServiceMock, 'list');
-        // spyOn(ContactServiceMock, 'save');
-        // spyOn(ContactServiceMock, 'delete');
         // spyOn(ContactServiceMock, 'get').and.returnValue(contacts[1]);
 
         // contactsCtrl = $controller('ContactController', {ContactService: ContactServiceMock});
