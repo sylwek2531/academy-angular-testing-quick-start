@@ -13,7 +13,6 @@
             if (contact.id === undefined) {
                 contact.id = uid++;
                 contacts.push(contact);
-                console.log(contacts);
             } else {
                 for (var i in contacts) {
                     if (contacts[i].id === contact.id) {

@@ -6,11 +6,9 @@ describe('ContactCtrl', function ()
     var ContactServiceMock;
     var contacts;
 
-    module.sharedInjector();
+    beforeEach(module('app'));
 
-    beforeAll(module('app'));
-
-    beforeAll(inject(function ($controller, _ContactService_)
+    beforeEach(inject(function ($controller, _ContactService_)
     {
         contacts = [{
             name: 'John',
@@ -52,7 +50,7 @@ describe('ContactCtrl', function ()
 
     describe('saveContact', function ()
     {
-        beforeAll(function ()
+        beforeEach(function ()
         {
             contactsCtrl.saveContact();
         });
@@ -72,7 +70,7 @@ describe('ContactCtrl', function ()
 
     describe('deleteContact', function ()
     {
-        beforeAll(function ()
+        beforeEach(function ()
         {
             contactsCtrl.deleteContact(1);
         });
@@ -88,7 +86,7 @@ describe('ContactCtrl', function ()
     });
     describe('editContact', function ()
     {
-        beforeAll(function ()
+        beforeEach(function ()
         {
             contactsCtrl.editContact(12);
         });
